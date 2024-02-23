@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#container{
+    height:100vh
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#header-section{
+    height: 40vh;
+    background: linear-gradient(to right ,#590fe0, #689af7);
+}
+
+#map-section{
+    height: 57vh;
+}
+
+
+article p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input{
+    border-radius: 20px 0 0 20px;
+}
+
+button{
+    border-radius: 0 20px 20px 0;
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1440px) {
+    #ip{
+        position: relative;
+    } 
+
+
+
+    #ip::after{
+        content: '';
+        position: absolute;
+        display: block;
+        height: 50px;
+        border: 1px solid darkgrey;
+        bottom: 0;
+        top: 0;
+        right: -10%;
+        }
+}
+
+
